@@ -32,7 +32,7 @@ function Navigation({ currentPage, handlePageChange }) {
           // Check to see if the currentPage is `Project`
           className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
         >
-          Project
+          Projects
         </a>
       </li>
       <li className="nav-item">

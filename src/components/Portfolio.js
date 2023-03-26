@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
 import Resume from './Resume';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Portfolio() {
   const [currentPage, setCurrentPage] = useState('Home');
