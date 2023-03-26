@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <div>
       <h1>Contact Page</h1>
-      <>
+      <form>
       <label>
         Name:
         <input
@@ -83,12 +83,8 @@ export default function Contact() {
         />
         {isRequired && <span style={{ color: "red" }}>This field is required</span>}
       </label>
-      <p>
-        {form.name}{' '}
-        {form.email}{' '}
-        {form.message}{' '}
-      </p>
-    </>
+      <button type="submit">Submit</button>
+    </form>
     </div>
   );
 }
