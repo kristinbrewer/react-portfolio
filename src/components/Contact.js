@@ -1,12 +1,94 @@
 import React from 'react';
+import { useState } from 'react';
 
 export default function Contact() {
+    //form
+    const [form, setForm] = useState({
+        name: '',
+        email: '',
+        message: '',
+      });
+    //on blur for cursor 
+    const [isRequired, setIsRequired] = useState(false);
+    const handleBlur = (event) => {
+        if (event.target.value === "") {
+        setIsRequired(true);
+        } else {
+        setIsRequired(false);
+        }
+    };
+    //email validation
+    const [email, setEmail] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(false);
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+    setIsValidEmail(validateEmail(event.target.value));
+  };
+
+  const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
   return (
     <div>
       <h1>Contact Page</h1>
+      <>
+      <label>
+        Name:
+        <input
+            type="text"
+            onBlur={handleBlur}
+            value={form.name}
+            onChange={e => {
+            setForm({
+              ...form,
+              name: e.target.value
+            });
+          }}
+        />
+        {isRequired && <span style={{ color: "red" }}>This field is required</span>}
+      </label>
+      <label>
+      Email:
+        <input
+        type="email"
+        onBlur={handleBlur}
+          value={form.email}
+          onChange={e => {
+            handleEmailChange();
+            setForm({
+              ...form,
+              email: e.target.value
+            });
+          }}
+        />
+        {isRequired && <span style={{ color: "red" }}>This field is required</span>}
+        {email !== "" && !isValidEmail && (
+          <span style={{ color: "red" }}>Invalid email address</span>
+        )}
+      </label>
+      <label>
+        Message:
+        <input
+        type="text"
+        onBlur={handleBlur}
+          value={form.message}
+          onChange={e => {
+            setForm({
+              ...form,
+              message: e.target.value
+            });
+          }}
+        />
+        {isRequired && <span style={{ color: "red" }}>This field is required</span>}
+      </label>
       <p>
-        Contact me at: @email.com
+        {form.name}{' '}
+        {form.email}{' '}
+        {form.message}{' '}
       </p>
+    </>
     </div>
   );
 }
