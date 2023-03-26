@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <h1>Home Page</h1>
       <p>
-       You are home
+       Hi, thanks for being here. Take a look around, I look forward to talking with you soon! 
       </p>
     </div>
   );
