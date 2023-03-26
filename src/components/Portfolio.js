@@ -6,6 +6,7 @@ import Project from './Project';
 import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
+import Resume from './Resume';
 
 export default function Portfolio() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -21,6 +22,9 @@ export default function Portfolio() {
     if (currentPage === 'Project') {
       return <Project />;
     }
+    if (currentPage === 'Resume') {
+        return <Resume />;
+      }
     return <Contact />;
   };
 
