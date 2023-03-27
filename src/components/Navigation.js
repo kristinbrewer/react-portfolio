@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 // destructuring assignment to pluck off our variables from the props object
 function Navigation({ currentPage, handlePageChange }) {

@@ -1,6 +1,9 @@
 /*box-sizing defines how the width and height of an element are calculated (if they include boarders/padding*/
 * {
     box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+  font-family: 'American Typewriter', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /*Root groups variables throughout code to make it easier to change*/
 /*color palette*/
@@ -12,13 +15,19 @@
     --light: rgb(212, 202, 219); 
 
 }
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'American Typewriter', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.body {
     color: var(--primary);
     background-color: var(--light);
-    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 800px;
+    min-height: 600px;
+    text-align: center;
+    margin: 32px auto;
+    border-radius: 20px;
+    padding-bottom: 32px; 
 }
 
 h1,
@@ -32,4 +41,48 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/*navigation bar*/
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+.nav-item :hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+}
+
+.nav-item :last-child {
+    margin-right: 0;
+  }
+
+.banner {
+    background: rgb(68, 88, 120);
+    background-image: url("./assets/floralbackground.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
 }

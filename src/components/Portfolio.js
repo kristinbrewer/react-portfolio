@@ -32,7 +32,7 @@ export default function Portfolio() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className='body'>
       <Header />  
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
