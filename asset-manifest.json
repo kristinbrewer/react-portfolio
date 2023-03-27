@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.31686347.css",
+    "main.js": "/react-portfolio/static/js/main.a746bf66.js",
+    "static/media/floralbackground.jpg": "/react-portfolio/static/media/floralbackground.34b80049f2f50a98a2f7.jpg",
+    "static/media/project4.jpg": "/react-portfolio/static/media/project4.9c365f08e089e1c5b570.jpg",
+    "static/media/project3.jpg": "/react-portfolio/static/media/project3.9f70f8a5b9cbdd69aadb.jpg",
+    "static/media/project5.jpg": "/react-portfolio/static/media/project5.2259134162966d76adb5.jpg",
+    "static/media/project6.jpg": "/react-portfolio/static/media/project6.e2d1e64c21925c5065b1.jpg",
+    "static/media/project1.jpg": "/react-portfolio/static/media/project1.9e2c63e66bbb8a1cce41.jpg",
+    "static/media/KBrewerResume2023.pdf": "/react-portfolio/static/media/KBrewerResume2023.e31fb9809884a69fbf82.pdf",
+    "static/media/project2.jpg": "/react-portfolio/static/media/project2.2c86820588e3281f3a1c.jpg",
+    "static/media/headshot.jpg": "/react-portfolio/static/media/headshot.cf88b956e08cc66592c0.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.31686347.css.map": "/react-portfolio/static/css/main.31686347.css.map",
+    "main.a746bf66.js.map": "/react-portfolio/static/js/main.a746bf66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31686347.css",
+    "static/js/main.a746bf66.js"
+  ]
+}
