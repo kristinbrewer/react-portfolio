@@ -32,9 +32,9 @@ export default function Contact() {
     return re.test(email);
   };
   return (
-    <div>
+    <div className='contact'>
       <h1>Contact Page</h1>
-      <form>
+      <form className='form'>
       <label>
         Name:
         <input
@@ -50,6 +50,7 @@ export default function Contact() {
         />
         {isRequired && <span style={{ color: "red" }}>This field is required</span>}
       </label>
+      <br></br>
       <label>
       Email:
         <input
@@ -69,6 +70,7 @@ export default function Contact() {
           <span style={{ color: "red" }}>Invalid email address</span>
         )}
       </label>
+      <br></br>
       <label>
         Message:
         <input
@@ -84,6 +86,7 @@ export default function Contact() {
         />
         {isRequired && <span style={{ color: "red" }}>This field is required</span>}
       </label>
+      <br></br>
       <button type="submit">Submit</button>
     </form>
     </div>

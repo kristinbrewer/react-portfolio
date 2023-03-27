@@ -86,3 +86,107 @@ p {
     align-items: flex-end;
     text-align: right;
 }
+.contact {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 800px;
+  min-height: 600px;
+  background-color: var(--light);
+  text-align: center;
+  margin: 32px auto;
+  border-radius: 20px;
+  padding-bottom: 32px;
+}
+/* portfolio project images */
+.flex-item {
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+  .flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+.project-one {
+    background-image: url("./assets/project1.jpg");
+  }
+  
+.project-two {
+    background-image: url("./assets/project2.jpg");
+  }
+  
+.project-three{
+    background-image: url("./assets/project3.jpg");
+  }
+  
+.project-four {
+    background-image: url("./assets/project4.jpg");
+  }
+  
+.project-five {
+    background-image: url("./assets/project5.jpg");
+  }
+.project-six {
+    background-image: url("./assets/project6.jpg");
+  }
+
+  /*footer*/
+  .footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.deployed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border: 5px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+    
+
+}

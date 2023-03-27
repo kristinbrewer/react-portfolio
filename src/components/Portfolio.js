@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
-import Home from './Home';
 import About from './About';
 import Project from './Project';
 import Contact from './Contact';
@@ -10,13 +9,10 @@ import Resume from './Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 export default function Portfolio() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
     
   // This method is checking to see what the value of `currentPage` is. 
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
