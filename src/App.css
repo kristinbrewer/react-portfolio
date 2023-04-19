@@ -133,6 +133,9 @@ p {
 .flex-item h3 {
   font-size: 1.6rem;
 }
+.project-zero {
+  background-image: url("./assets/project0.jpg");
+}
 .project-one {
     background-image: url("./assets/project1.jpg");
   }

@@ -9,6 +9,12 @@ export default function Project() {
            <h2>Here are some of my completed projects:</h2>
            <p>Click the title to take you to the GitHub Repo</p>
         <div class="flex-container">
+          <a href="https://github.com/sco5am/KidStarter" className="flex-item project-zero">
+                <div>
+                  <h3>KidStarter Final Project</h3>
+                </div>
+              </a>
+              <a href="https://frozen-mesa-16052.herokuapp.com/" className="deployed"> <div>KidStarter Deployed on Heroku </div> </a>
             <a href="https://github.com/kristinbrewer/README-Generator" className="flex-item project-one">
                 <div>
                   <h3>ReadMe Generator</h3>
@@ -48,6 +54,8 @@ export default function Project() {
                 </div>
             </a>
             <a href="https://kbtexteditorosu2023.herokuapp.com/" className="deployed"> <div>PWA Deployed on Heroku </div> </a>
+
+                        
             
     </section>
     </div>
